@@ -4,10 +4,12 @@
 
 ## 서버 실행 방법
 
-### 방법  — Node.js (npx) - MacOS 기준
+### 방법1  — Node.js (npx) - MacOS 기준
 
 ```bash
 cd frontend
 npx serve .
 ```
 
+### 방법 2 - 링크
+https://rudeodud.github.io/ELS-WEB-PROJECT/frontend/index.html
