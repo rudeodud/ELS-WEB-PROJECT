@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>위험성 — ELS 완전 정복</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">🏠 홈</a></li>
+    <li><a href="WhatIsEls.html">ELS란?</a></li>
+    <li><a href="Compare.html">예적금과 ETF 비교</a></li>
+    <li><a href="Risks.html" class="active">위험성</a></li>
+    <li><a href="Quiz.html">OX 퀴즈</a></li>
+    <li><a href="References.html">출처</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <div class="tag">꼭 알아야 할 위험</div>
+  <h1>ELS의 위험성</h1>
+  <p style="margin-top:16px;color:var(--text-muted);">
+    ELS는 조건만 맞으면 예금보다 높은 수익을 주지만, 조건을 못 맞추면 원금을 잃을 수 있어요. 어떤 위험이 있는지 하나씩 살펴봅니다.
+  </p>
+
+  <!-- 위험 1: 원금 손실 -->
+  <h2>위험 1 — 원금 손실 가능성</h2>
+  <p>ELS는 <strong>원금 비보장 상품</strong>입니다. 낙인이 발동된 후 만기까지 상환조건을 충족하지 못하면 원금의 일부 또는 전부를 잃을 수 있어요.</p>
+
+  <div class="compare-wrap">
+    <table>
+      <thead>
+        <tr><th>상황</th><th>결과</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>낙인 미발동 + 상환조건 충족</td>
+          <td class="good">✅ 원금 + 이자 전액 수령</td>
+        </tr>
+        <tr>
+          <td>낙인 미발동 + 상환조건 미달 (만기)</td>
+          <td class="good">✅ 원금 + 이자 전액 수령</td>
+        </tr>
+        <tr>
+          <td>낙인 발동 + 이후 상환조건 충족</td>
+          <td class="good">✅ 원금 + 이자 정상 수령</td>
+        </tr>
+        <tr>
+          <td>낙인 발동 + 만기까지 상환조건 미달</td>
+          <td class="bad">❌ 만기 기초자산 점수만큼 원금 손실</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="analogy-box" style="margin-top:16px;background:var(--danger-light);border-color:#f5b7b1;">
+    <div class="label" style="color:var(--danger);">최악의 시나리오</div>
+    <p>기초자산이 만기에 0에 가깝게 폭락하면 투자금 전액을 잃을 수 있습니다. 이론상 손실률은 <strong>최대 -100%</strong>까지 가능해요.</p>
+  </div>
+
+  <!-- 위험 2: 낙인 구조 -->
+  <h2>위험 2 — 낙인(Knock-In) 구조</h2>
+  <p>낙인은 ELS에서 가장 핵심적인 위험 장치입니다. 기초자산이 계약 기간 중 단 한 번이라도 낙인선 아래로 떨어지면 발동됩니다.</p>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-icon">📉</div>
+      <h3>낙인 발동 조건</h3>
+      <p>기초자산이 최초 가격의 <strong>50~60% 미만</strong>으로 하락하는 순간 발동됩니다. 평가일이 아닌 <strong>매일</strong> 감시합니다.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">⚡</div>
+      <h3>즉시 손실 아님</h3>
+      <p>낙인이 발동되었다고 바로 손실이 확정되지 않아요. 이후 상환조건을 충족하면 정상적으로 원금 + 이자를 받을 수 있습니다.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔴</div>
+      <h3>손실 확정 조건</h3>
+      <p>낙인 발동 후 만기까지 단 한 번도 상환조건을 넘지 못하면, 만기 기초자산 가격 기준으로 원금 손실이 확정됩니다.</p>
+    </div>
+  </div>
+
+  <div class="analogy-box blue" style="margin-top:20px;">
+    <div class="label">낙인 요약</div>
+    <p>
+      낙인 발동 + 이후 상환조건 충족 → <span style="color:#27ae60;font-weight:700;">✅ 정상 수령</span><br>
+      낙인 발동 + 만기까지 상환조건 미달 → <span style="color:var(--danger);font-weight:700;">❌ 원금 손실 확정</span>
+    </p>
+  </div>
+
+  <!-- 위험 3: 3개 지수 모두 조건 충족 -->
+  <h2>위험 3 — 기초자산 3개 모두 충족해야 상환</h2>
+  <p>ELS는 보통 3개의 기초자산(예: KOSPI200, S&P500, EuroStoxx50)을 동시에 추적합니다. 조기상환이 되려면 <strong>3개 모두</strong> 상환조건을 넘어야 해요.</p>
+
+  <div class="compare-wrap">
+    <table>
+      <thead>
+        <tr><th>기초자산</th><th>점수</th><th>상환조건(90)</th><th>결과</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>KOSPI200</td><td>95</td><td>90 이상</td><td class="good">✅ 충족</td></tr>
+        <tr><td>S&amp;P500</td><td>92</td><td>90 이상</td><td class="good">✅ 충족</td></tr>
+        <tr><td>EuroStoxx50</td><td>87</td><td>90 이상</td><td class="bad">❌ 미달</td></tr>
+        <tr><td colspan="3"><strong>최종 결과</strong></td><td class="bad">❌ 조기상환 실패 (하나라도 미달이면 전체 실패)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="analogy-box" style="margin-top:16px;">
+    <div class="label">핵심</div>
+    <p>한국, 미국, 유럽 시장이 <strong>동시에</strong> 좋아야 수익을 받을 수 있어요. 하나라도 기준에 못 미치면 조기상환이 되지 않습니다.</p>
+  </div>
+
+  <!-- 위험 4: 유동성 위험 -->
+  <h2>위험 4 — 유동성 위험 (돈이 묶임)</h2>
+  <p>ELS는 만기가 보통 <strong>3년</strong>입니다. 중간에 급하게 돈이 필요해도 쉽게 꺼낼 수 없어요.</p>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-icon">🔒</div>
+      <h3>중도 환매 시 손실</h3>
+      <p>만기 전에 해지하면 시장 가격 기준으로 정산되어 원금보다 적게 받을 수 있어요. 급하게 돈이 필요한 상황에선 불리합니다.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📅</div>
+      <h3>3년간 자금 고정</h3>
+      <p>조기상환이 되지 않으면 최대 3년 동안 돈이 묶입니다. 그 사이 다른 투자 기회가 생겨도 활용하기 어려워요.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">⚠️</div>
+      <h3>예금과 차이</h3>
+      <p>예금은 중도 해지해도 이자만 손해지만, ELS는 중도 해지 시 원금 손실이 발생할 수 있습니다.</p>
+    </div>
+  </div>
+
+  <!-- 위험 5: 발행사 위험 -->
+  <h2>위험 5 — 발행사(증권사) 부도 위험</h2>
+  <p>ELS는 증권사가 발행합니다. 만약 해당 증권사가 <strong>파산</strong>하면 원금을 돌려받지 못할 수 있어요.</p>
+
+  <div class="compare-wrap">
+    <table>
+      <thead>
+        <tr><th>구분</th><th>🏦 예금</th><th>📈 ELS</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>발행 기관</td>
+          <td>은행</td>
+          <td class="bad">증권사</td>
+        </tr>
+        <tr>
+          <td>기관 파산 시</td>
+          <td class="good">예금보험공사가 1억원까지 보장</td>
+          <td class="bad">보호 없음 — 원금 손실 가능</td>
+        </tr>
+        <tr>
+          <td>안전망</td>
+          <td class="good">예금자보호법 적용</td>
+          <td class="bad">적용 안 됨</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 높은 수익률만 보면 왜 위험한가 -->
+  <h2>높은 수익률만 보고 투자하면 왜 위험한가?</h2>
+  <p>ELS는 "연 8~10% 수익"이라는 숫자가 눈에 띄지만, 그 숫자 뒤에 숨어있는 조건들을 모르면 큰 손실을 볼 수 있어요.</p>
+
+  <div class="compare-wrap">
+    <table>
+      <thead>
+        <tr><th>수익률만 보는 시각</th><th>실제로 확인해야 할 것</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>"연 10% 수익이면 예금보다 훨씬 좋다!"</td>
+          <td class="bad">낙인 발동 시 원금 -40% 이상 손실 가능. 수익과 손실이 비대칭.</td>
+        </tr>
+        <tr>
+          <td>"상환조건이 85%니까 많이 내려가도 되겠다."</td>
+          <td class="bad">낙인선(50~60%)은 별도 존재. 낙인은 평가일이 아닌 매일 24시간 감시.</td>
+        </tr>
+        <tr>
+          <td>"3개 지수 중 하나쯤 내려가도 괜찮겠지."</td>
+          <td class="bad">3개 모두 조건 충족해야 상환. 하나라도 미달이면 전체 실패.</td>
+        </tr>
+        <tr>
+          <td>"중간에 급하면 꺼내면 되지."</td>
+          <td class="bad">중도 해지 시 시장가 정산 → 원금보다 적게 받을 수 있음.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="analogy-box" style="margin-top:20px;background:var(--danger-light);border-color:#f5b7b1;">
+    <div class="label" style="color:var(--danger);">핵심</div>
+    <p>
+      <strong>수익률은 "조건이 다 맞았을 때" 받는 숫자</strong>입니다.<br>
+      조건이 안 맞으면 수익은커녕 원금도 잃을 수 있어요.<br>
+      <span style="font-size:0.9rem;color:var(--text-muted);">높은 수익률 = 그만큼 높은 위험을 감수하는 대가입니다.</span>
+    </p>
+  </div>
+
+  <!-- 투자 전 체크리스트 -->
+  <h2>투자 전 체크리스트</h2>
+  <p style="margin-bottom:16px;">ELS에 투자하기 전 아래 항목을 꼭 확인하세요.</p>
+
+  <ul class="checklist">
+    <li>3년간 이 돈이 없어도 생활에 지장이 없나요?</li>
+    <li>기초자산(지수)이 50~60% 이상 폭락할 가능성을 감수할 수 있나요?</li>
+    <li>낙인이 발동되면 원금을 잃을 수 있다는 걸 이해하고 있나요?</li>
+    <li>3개 기초자산 모두 상환조건을 충족해야 한다는 걸 알고 있나요?</li>
+    <li>발행 증권사가 신뢰할 수 있는 곳인지 확인했나요?</li>
+    <li>중도 해지 시 원금 손실이 날 수 있다는 걸 알고 있나요?</li>
+  </ul>
+
+  <div class="analogy-box" style="margin-top:24px;">
+    <div class="label">결론</div>
+    <p>
+      ELS는 <strong>조건만 맞으면 예금보다 높은 수익</strong>을 주는 매력적인 상품이지만,<br>
+      조건을 못 맞추면 <strong>원금을 잃을 수 있는 위험한 상품</strong>이기도 합니다.<br>
+      <span style="color:var(--danger);font-weight:600;">투자 전 반드시 구조와 위험을 충분히 이해한 뒤 결정해야합니다.</span>
+    </p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 ELS 교육 자료 · 교육 목적으로 제작된 비영리 페이지</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

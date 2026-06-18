@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ELS란 무엇인가? — ELS 완전 정복</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">🏠 홈</a></li>
+    <li><a href="WhatIsEls.html">ELS란?</a></li>
+    <li><a href="Compare.html">예적금과 ETF 비교</a></li>
+    <li><a href="Risks.html">위험성</a></li>
+    <li><a href="Quiz.html">OX 퀴즈</a></li>
+    <li><a href="References.html">출처</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <div class="tag">개념 이해</div>
+  <h1>ELS란 무엇인가요?</h1>
+
+  <strong>"ELS란 특정 주가지수·종목에 연동해 수익이 결정되는 파생결합증권이라고 생각하면 된다."</strong>
+
+  <p style="margin-top:20px;">
+    ELS(Equity Linked Securities)는 <strong>주식 연계 파생결합증권</strong>입니다.
+    KOSPI200·S&P500 같은 주가지수나 특정 종목의 가격에 따라 수익이 결정되며,
+    은행 예금과 달리 원금이 보장되지 않습니다.
+    증권사가 발행하고, 통상 <strong>3년 만기</strong>에 6개월마다 조기 상환 기회가 주어지는 구조입니다.
+  </p>
+
+  <h2>비유</h2>
+  <img src="images/StudentABC.png" style="max-width:100%; height:auto;display: block;margin:16px 0;">
+  <div class="story-wrap">
+
+    <p class="story-intro">점수가 평균 80점인 학생 C와, 학생 A·B가 있습니다. A는 B에게 내기를 제안합니다. - no AI</p>
+
+    <div class="chat-block">
+      <div class="chat-bubble a">
+        <span class="chat-name">A (증권사)</span>
+        C의 3년간 평균 성적이 80점 아래로 내려가지 않는다에 베팅해. 맞으면 연간 10% 이자를 줄게. 얼마 걸래?
+      </div>
+      <div class="chat-bubble a">
+        <span class="chat-name">A (증권사)</span>
+        단, 50점 아래로 한 번이라도 떨어지면 네 돈 절반을 가져가고, 40 점 아래면 더 가져갈 거야.
+      </div>
+      <div class="chat-bubble b">
+        <span class="chat-name">B (투자자)</span>
+        C가 얼마나 열심히 공부하는지 봤는데… 떨어지기야 하겠어? 10% 이자면 나쁘지 않은데.
+      </div>
+      <div class="chat-bubble b">
+        <span class="chat-name">B (투자자)</span>
+        중간에 일찍 끝낼 수 있는 조건을 만들어 줘.
+      </div>
+      <div class="chat-bubble a">
+        <span class="chat-name">A (증권사)</span>
+        좋아, 6개월마다 점수를 확인해서 기준을 넘으면 바로 이자 주고 끝내는 건 어때?
+      </div>
+    </div>
+
+    <h2>ELS의 개념들</h2>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-icon">📊</div>
+      <h3>기초자산</h3>
+      <p>ELS의 수익을 결정하는 기준이 되는 지수나 종목입니다. 예를 들어 KOSPI200, S&amp;P500, EuroStoxx50 같은 주가지수가 기초자산이 됩니다. 기초자산 가격이 오르거나 내리는 것에 따라 내 수익이 달라집니다.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📅</div>
+      <h3>조기 상환 - 수정</h3>
+      <p>6개월마다 기초자산 가격을 평가합니다. <strong>조건(상환조건)</strong>(예: 90%) 이상이 만족되면 약속된 수익(연 6% 내외)을 받고 상품이 종료됩니다. 3년을 기다리지 않고 일찍 끝낼 수 있습니다.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🏁</div>
+      <h3>만기 상환</h3>
+      <p>조기상환 조건을 한 번도 충족하지 못해 3년이 지났을 경우, 낙인이 발동되지 않았다면 3년치 이자와 원금을 받는 상환 방식입니다.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🎯</div>
+      <h3>상환조건</h3>
+      <p>조기·만기 상환이 가능한지 판단하는 기준선입니다. 평가일에 기초자산이 상환조건 이상이면 상환 성공하여 이자+원금을 받고 계약종료, 이 선 미만이면 다음 평가로 넘어갑니다.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">⚠️</div>
+      <h3>낙인(Knock-In) 손실</h3>
+      <p>만기 전 기초자산이 한 번이라도 <strong>낙인</strong>(예: 50%) 아래로 내려가면, 이후 상환조건을 충족하지 못할 경우 만기 시 하락률만큼 원금을 잃을 수 있습니다.</p>
+    </div>
+  </div>
+
+    <div class="analogy-box" style="margin-top:20px;">
+      <div class="label">핵심 요약</div>
+      <p><strong>A = 증권사</strong>, <strong>B = 투자자</strong>, <strong>C의 성적 = 주가지수</strong>입니다.<br>
+      C의 성적이 잘 유지되면 B(투자자)는 이자를 받고, 상환조건보다 성적이 크게 떨어지거나 낙인에 닿으면 원금 손실이 생깁니다. 이것이 ELS의 구조입니다.</p>
+    </div>
+
+  <h2 style="margin-top:48px;">ELS 주요 유형 3가지</h2>
+  <p style="margin-bottom:20px;font-size:0.95rem;color:var(--text-muted);">ELS는 수익 지급 방식과 구조에 따라 크게 3가지 유형으로 나뉩니다.</p>
+
+  <div class="compare-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>유형</th>
+          <th>📉 스텝다운형</th>
+          <th>💰 월지급식형</th>
+          <th>🦎 리자드형</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>수익 지급 방식</td>
+          <td>조기상환 또는 만기 시 한 번에 지급</td>
+          <td>매월 일정 수익을 지속 지급</td>
+          <td>낙인 발동 전 조기상환 시 원금+이자 지급</td>
+        </tr>
+        <tr>
+          <td>상환조건 변화</td>
+          <td>95→90→85→85→80→75 (점점 낮아짐)</td>
+          <td>별도 상환조건 없이 매월 자동 지급</td>
+          <td>낙인 발동 전까지만 조기상환 조건 유효</td>
+        </tr>
+        <tr>
+          <td>낙인 발동 시</td>
+          <td class="bad">만기까지 상환조건 미달 시 원금 손실</td>
+          <td class="bad">월 지급 중단, 원금 손실 가능</td>
+          <td class="good">낙인 발동 전 조기상환되면 손실 없음</td>
+        </tr>
+        <tr>
+          <td>특징</td>
+          <td>가장 일반적인 구조, 만기 3년</td>
+          <td>현금 흐름이 필요한 투자자에게 적합</td>
+          <td>낙인 전 탈출하면 안전, 낙인 후엔 일반 ELS와 동일</td>
+        </tr>
+        <tr>
+          <td>장점</td>
+          <td class="good">장기 보유 시 상환 가능성 높아짐</td>
+          <td class="good">매월 수익 확인 가능, 현금흐름 안정</td>
+          <td class="good">낙인 발동 직전 조기상환으로 손실 회피 가능</td>
+        </tr>
+        <tr>
+          <td>단점</td>
+          <td class="mid">만기까지 돈이 묶임</td>
+          <td class="bad">낙인 발동 시 원금 손실 + 월 지급 중단</td>
+          <td class="bad">낙인 발동 후엔 일반 ELS와 동일하게 손실 위험</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+    <h3 style="margin-top:32px;margin-bottom:8px;">조기 상환 조건표 - 스텝다운형</h3>
+    <p style="margin-bottom:12px;font-size:0.9rem;color:var(--text-muted);">
+      원금 200만원 · 연 이율 10% 기준 — 시간이 지날수록 상환조건가 낮아져 조기상환이 쉬워집니다.
+    </p>
+    <div class="compare-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>평가 시점</th>
+            <th>상환조건 (조기상환 기준)</th>
+            <th>누적 이자율</th>
+            <th>이자</th>
+            <th>수령액 (원금 포함)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>6개월</td>
+            <td>95점 이상</td>
+            <td>5%</td>
+            <td>10만원</td>
+            <td class="good">✅ 210만원</td>
+          </tr>
+          <tr>
+            <td>1년</td>
+            <td>90점 이상 ↓</td>
+            <td>10%</td>
+            <td>20만원</td>
+            <td class="good">✅ 220만원</td>
+          </tr>
+          <tr>
+            <td>1년 6개월</td>
+            <td>85점 이상 ↓</td>
+            <td>15%</td>
+            <td>30만원</td>
+            <td class="good">✅ 230만원</td>
+          </tr>
+          <tr>
+            <td>2년</td>
+            <td>85점 이상</td>
+            <td>20%</td>
+            <td>40만원</td>
+            <td class="good">✅ 240만원</td>
+          </tr>
+          <tr>
+            <td>2년 6개월</td>
+            <td>80점 이상 ↓</td>
+            <td>25%</td>
+            <td>50만원</td>
+            <td class="good">✅ 250만원</td>
+          </tr>
+          <tr>
+            <td>3년 (만기)</td>
+            <td>75점 이상 ↓</td>
+            <td>30%</td>
+            <td>60만원</td>
+            <td class="good">✅ 260만원</td>
+          </tr>
+          <tr>
+            <td>3년 (만기)</td>
+            <td>낙인(50점) 미만 터치 후 50~75점</td>
+            <td>—</td>
+            <td>—</td>
+            <td class="bad">❌ 낙인 발동 → 원금 손실</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 시나리오 A -->
+    <h3 style="margin-top:32px;margin-bottom:8px;">시나리오 A — 2년째 조기상환 성공</h3>
+    <div class="compare-wrap">
+      <table>
+        <thead>
+          <tr><th>평가 시점</th><th>기초자산 점수</th><th>상환조건</th><th>결과</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>6개월</td><td>92</td><td>95 이상</td><td class="bad">❌ 미달 — 다음으로</td></tr>
+          <tr><td>1년</td><td>88</td><td>90 이상</td><td class="bad">❌ 미달 — 다음으로</td></tr>
+          <tr><td>1년 6개월</td><td>83</td><td>85 이상</td><td class="bad">❌ 미달 — 다음으로</td></tr>
+          <tr><td>2년</td><td>87</td><td>85 이상</td><td class="good">✅ 상환조건 충족!</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="analogy-box green" style="margin-top:12px;">
+      <div class="label">결과</div>
+      <p>200만원 + 이자 40만원 (연 10% × 2년) = <strong>240만원 수령 후 계약 종료</strong></p>
+    </div>
+
+    <!-- 시나리오 B -->
+    <h3 style="margin-top:32px;margin-bottom:8px;">시나리오 B — 낙인(60%)만 안 터지면 만기에 원금 + 이자 수령</h3>
+    <p style="margin-bottom:12px;font-size:0.9rem;color:var(--text-muted);">조기상환에 5번 모두 실패하고, 만기에 상환조건(85%)도 못 넘어도 — 낙인(60%)이 단 한 번도 발동되지 않았다면 원금과 3년치 이자를 모두 받습니다.</p>
+    <div class="compare-wrap">
+      <table>
+        <thead>
+          <tr><th>평가 시점</th><th>기초자산 점수</th><th>상환조건</th><th>낙인 60%</th><th>결과</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>6개월</td><td>88</td><td>95 이상</td><td>—</td><td class="bad">❌ 조기상환 실패</td></tr>
+          <tr><td>1년</td><td>82</td><td>90 이상</td><td>—</td><td class="bad">❌ 조기상환 실패</td></tr>
+          <tr><td>1년 6개월</td><td>75</td><td>85 이상</td><td>—</td><td class="bad">❌ 조기상환 실패</td></tr>
+          <tr><td>2년</td><td>72</td><td>85 이상</td><td>—</td><td class="bad">❌ 조기상환 실패</td></tr>
+          <tr><td>2년 6개월</td><td>70</td><td>80 이상</td><td>—</td><td class="bad">❌ 조기상환 실패</td></tr>
+          <tr><td>3년 (만기)</td><td>68</td><td>85 이상</td><td class="good">✅ 한 번도 60 미만 없음</td><td class="good">✅ 원금 + 이자 전액 수령!</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="analogy-box green" style="margin-top:12px;">
+      <div class="label">결과</div>
+      <p>만기에 68점으로 상환조건(85%)을 넘지 못했지만, 3년 내내 낙인(60%) 선을 한 번도 터치하지 않았습니다.<br>
+      → <strong>낙인 미발동</strong>이므로 원금 + 3년치 이자를 전액 수령.<br>
+      200만원 + 이자 60만원 (연 10% × 3년) = <strong>260만원 수령 후 계약 종료</strong></p>
+    </div>
+    <div class="analogy-box blue" style="margin-top:8px;">
+      <div class="label">핵심</div>
+      <p>상환조건(85%)을 못 넘어도 괜찮습니다. <strong>낙인(60%)만 발동되지 않으면 손실은 없습니다.</strong><br>
+      조기상환 실패 ≠ 손실 &nbsp;|&nbsp; 낙인 발동 = 손실</p>
+    </div>
+
+    <!-- 시나리오 C -->
+    <h3 style="margin-top:32px;margin-bottom:8px;">시나리오 C — 낙인 발동 후 만기까지 상환조건 미달 → 원금 손실</h3>
+    <p style="margin-bottom:12px;font-size:0.9rem;color:var(--text-muted);">낙인이 발동된 뒤 만기까지 단 한 번도 상환조건을 넘지 못하면, 만기 기초자산 점수를 기준으로 손실이 확정됩니다.</p>
+    <div class="compare-wrap">
+      <table>
+        <thead>
+          <tr><th>평가 시점</th><th>기초자산 점수</th><th>상환조건</th><th>결과</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>6개월</td><td>82</td><td>95 이상</td><td class="bad">❌ 미달</td></tr>
+          <tr><td>1년</td><td>70</td><td>90 이상</td><td class="bad">❌ 미달</td></tr>
+          <tr><td>1년 6개월</td><td class="bad">48 💥</td><td>85 이상</td><td class="bad">💥 낙인 발동!</td></tr>
+          <tr><td>2년</td><td>60</td><td>85 이상</td><td class="bad">❌ 미달</td></tr>
+          <tr><td>2년 6개월</td><td>65</td><td>80 이상</td><td class="bad">❌ 미달</td></tr>
+          <tr><td>3년 (만기)</td><td>68</td><td>75 이상</td><td class="bad">❌ 미달 → 원금손실 확정</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="analogy-box" style="margin-top:12px;background:var(--danger-light);border-color:#f5b7b1;">
+      <div class="label" style="color:var(--danger);">결과</div>
+      <p>1년 6개월째 낙인(50 미만) 발동 💥<br>
+      이후에도 상환조건을 한 번도 넘지 못하고 만기 점수 68점 → 상환조건(75) 미달<br>
+      <strong>200만원 × 68% = 136만원만 수령 (64만원 손실)</strong></p>
+    </div>
+
+    <!-- 시나리오 D -->
+    <h3 style="margin-top:32px;margin-bottom:8px;">시나리오 D — 낙인 발동 후 상환조건 충족 → 정상 조기상환 ✅</h3>
+    <p style="margin-bottom:12px;font-size:0.9rem;color:var(--text-muted);">낙인이 발동되더라도 이후 평가일에 상환조건을 넘으면 정상적으로 조기상환되어 원금 + 이자를 받습니다. 낙인 발동이 곧 손실 확정이 아닙니다.</p>
+    <div class="compare-wrap">
+      <table>
+        <thead>
+          <tr><th>평가 시점</th><th>기초자산 점수</th><th>상환조건</th><th>결과</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>6개월</td><td>82</td><td>95 이상</td><td class="bad">❌ 미달</td></tr>
+          <tr><td>1년</td><td>70</td><td>90 이상</td><td class="bad">❌ 미달</td></tr>
+          <tr><td>1년 6개월</td><td class="bad">46 💥</td><td>85 이상</td><td class="bad">💥 낙인 발동!</td></tr>
+          <tr><td>2년</td><td>88</td><td>85 이상</td><td class="good">✅ 상환조건 충족 → 조기상환 성공!</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="analogy-box green" style="margin-top:12px;">
+      <div class="label">결과</div>
+      <p>낙인이 발동됐지만 2년째 평가일에 88점으로 상환조건(85) 충족<br>
+      → <strong>정상 조기상환</strong>으로 원금 + 이자 전액 수령<br>
+      200만원 + 이자 40만원 (연 10% × 2년) = <strong>240만원 수령 후 계약 종료</strong></p>
+    </div>
+    <div class="analogy-box blue" style="margin-top:8px;">
+      <div class="label">핵심 포인트</div>
+      <p>낙인 발동 = 즉시 손실이 아닙니다. 이후 상환조건만 넘으면 이자까지 정상 수령합니다.<br>
+      <strong>진짜 위험한 경우</strong>: 낙인 발동 후 → 만기까지 상환조건을 단 한 번도 못 넘길 때<br>
+      → 이때만 만기 기초자산 점수 기준으로 <span style="color:var(--danger);font-weight:700;">원금 손실이 확정됩니다.</span></p>
+    </div>
+
+    <h3 style="margin-top:32px;margin-bottom:12px;">ELS는 단리 — 돈이 어떻게 흘러가나요?</h3>
+
+    <div class="analogy-box blue" style="margin-bottom:20px;">
+      <div class="label">단리 vs 복리</div>
+      <p>
+        <strong>복리</strong>는 이자에 이자가 붙습니다. 예를 들어 1년 차에 받은 이자 20만원이 2년 차에도 같이 굴러서 이자를 냅니다.<br>
+        <strong>단리</strong>는 원금에만 이자가 붙습니다. ELS는 조기상환이 되면 계약이 끝나기 때문에, 이자를 받은 채로 계속 굴리는 상황이 없습니다.
+      </p>
+    </div>
+
+    <div class="analogy-box" style="margin-top:16px;">
+      <div class="label">핵심 포인트</div>
+      <p>
+        ELS에서 내 돈은 항상 <strong>원금 그대로 묶여 있다가</strong>, 조기상환 또는 만기 때 한 번에 돌아옵니다.<br>
+        이자는 묶여 있던 기간에 비례해서 쌓이고, 상환 시점에 원금과 함께 한꺼번에 받습니다.<br>
+        <span style="color:var(--danger);">낙인이 발동되면 이자는 없고, 원금만 깎인 채로 돌아옵니다.</span>
+      </p>
+    </div>
+
+  </div>
+
+  <h2>핵심 개념</h2>
+
+  <div class="compare-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>용어</th>
+          <th>의미</th>
+          <th>예시</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>기초자산</td>
+          <td>수익을 연동하는 기준이 되는 지수·종목</td>
+          <td>KOSPI200, S&amp;P500, 삼성전자</td>
+        </tr>
+        <tr>
+          <td>상환조건</td>
+          <td>조기·만기 상환 여부를 판단하는 가격 기준선</td>
+          <td>가입일 지수의 90%, 85% 등 — 이 선 이상이면 상환 성공</td>
+        </tr>
+        <tr>
+          <td>낙인(Knock-In)</td>
+          <td>손실 구조가 작동하는 가격 하한선 — 한 번이라도 터치하면 발동</td>
+          <td>가입일 지수의 50% 또는 60% 미만 터치 시 발동</td>
+        </tr>
+        <tr>
+          <td>조기 상환</td>
+          <td>만기 전 조기상환 조건 충족 시 원금+수익 지급 후 종료</td>
+          <td>6개월 평가 시 90pt 이상 → 지급</td>
+        </tr>
+        <tr>
+          <td>만기 상환</td>
+          <td>3년 만기까지 유지 후 최종 평가</td>
+          <td>낙인 없으면 → 원금+이자수익 을 받고 계약 종료</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>실제 ELS 상품 분석</h2>
+  <p style="margin-bottom:16px;font-size:0.95rem;">
+    <strong>지금까지 배운 개념들이 실제 상품에서 어떻게 적용되는지 살펴봅니다.</strong>
+  </p>
+
+  <!-- 실제 명세서 이미지 -->
+  <h3 style="margin-bottom:12px;">실제 상품 명세서 원본</h3>
+  <img
+    src="images/미래에셋증권ELS상품명세서.png"
+    alt="미래에셋증권 ELS 상품 명세서"
+    style="max-width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:36px;"
+  >
+
+  <!-- 기본 정보 -->
+  <h3 style="margin-bottom:12px;">기본 정보</h3>
+  <div class="card-grid" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr));">
+    <div class="card" style="text-align:center;">
+      <div class="card-icon">📄</div>
+      <h3>상품명</h3>
+      <p style="font-size:0.85rem;">미래에셋대우 제20033회 공모ELS</p>
+    </div>
+    <div class="card" style="text-align:center;">
+      <div class="card-icon">⚠️</div>
+      <h3>위험등급</h3>
+      <p style="font-size:0.85rem;color:var(--danger);font-weight:700;">고위험 2등급</p>
+    </div>
+    <div class="card" style="text-align:center;">
+      <div class="card-icon">🔒</div>
+      <h3>원금 보장</h3>
+      <p style="font-size:0.85rem;color:var(--danger);font-weight:700;">❌ 원금 비보장형</p>
+    </div>
+    <div class="card" style="text-align:center;">
+      <div class="card-icon">📅</div>
+      <h3>만기</h3>
+      <p style="font-size:0.85rem;">3년 / 6개월마다 조기상환 평가</p>
+    </div>
+  </div>
+
+  <!-- 기초자산 -->
+  <h3 style="margin-top:36px;margin-bottom:8px;">기초자산 — 연계된 주가지수 3개</h3>
+  <p style="margin-bottom:12px;font-size:0.9rem;">
+    <h3><strong>*이 ELS는 3개의 주가지수를 동시에 추적합니다.3개 모두 상환조건을 만족해야 조기상환됩니다.*</strong></h3>
+  </p>
+  <div class="compare-wrap">
+    <table>
+      <thead>
+        <tr><th>지수명</th><th>설명</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>NIKKEI 225</td><td>일본 도쿄증시 대표 225개 기업 지수</td></tr>
+        <tr><td>홍콩 Hang Seng</td><td>홍콩 증시 대표 지수</td></tr>
+        <tr><td>EuroStoxx 50</td><td>유럽 주요 50개 기업 지수</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="analogy-box" style="margin-top:12px;">
+    <div class="label">핵심 위험 요소</div>
+    <p>3개 중 <strong>하나라도</strong> 상환조건 미달이면 조기상환이 안 됩니다. 일본·홍콩·유럽 시장이 모두 동시에 좋아야 수익을 받을 수 있습니다.</p>
+  </div>
+
+  <!-- 조기상환 조건 -->
+  <h3 style="margin-top:36px;margin-bottom:8px;">조기상환 조건 — 스텝다운형 (90-90-90-85-85-85)</h3>
+  <p style="margin-bottom:12px;font-size:0.9rem;color:var(--text-muted);">
+    초반 3차까지는 90% 이상, 4차부터는 85%로 기준이 완화됩니다. 연 수익률 5.1% 기준.
+  </p>
+  <div class="compare-wrap">
+    <table>
+      <thead>
+        <tr><th>평가 차수</th><th>평가일</th><th>조기상환 기준</th><th>누적 수익률 (연 5.1%)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1차</td><td>2017년 07월 19일</td><td>90 이상</td><td class="good">2.55%</td></tr>
+        <tr><td>2차</td><td>2018년 01월 19일</td><td>90 이상</td><td class="good">5.10%</td></tr>
+        <tr><td>3차</td><td>2018년 07월 19일</td><td>90 이상</td><td class="good">7.65%</td></tr>
+        <tr><td>4차</td><td>2019년 01월 21일</td><td>85 이상 ↓완화</td><td class="good">10.20%</td></tr>
+        <tr><td>5차</td><td>2019년 07월 19일</td><td>85 이상</td><td class="good">12.75%</td></tr>
+        <tr><td>6차 (만기)</td><td>2020년 01월 20일</td><td>85 이상</td><td class="good">15.30%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 낙인 조건 -->
+  <h3 style="margin-top:36px;margin-bottom:8px;">낙인(Knock-In) 조건</h3>
+  <div class="analogy-box blue" style="margin-bottom:0;">
+    <div class="label">낙인 발동 기준</div>
+    <p>
+      3개 지수 중 <strong>하나라도</strong> 최초 가격 대비 <strong>38% 이상 하락</strong>하면 <strong>낙인</strong> 발동.<br>
+      즉, 최초가격의 <strong>62% 미만</strong>으로 떨어지는 순간 위험 구간에 진입합니다.<br>
+      낙인 발동 후 만기(6차)에도 상환조건(85%) 미만이면 → <span style="color:var(--danger);font-weight:700;">원금 손실 발생 (최대 -100%)</span>
+    </p>
+  </div>
+
+  <!-- 실제 시나리오 -->
+  <h3 style="margin-top:36px;margin-bottom:8px;">실제 시나리오 예시 — 1,000만원 투자 기준</h3>
+  <div class="compare-wrap">
+    <table>
+      <thead>
+        <tr><th>시나리오</th><th>결과</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1차(6개월)에 3개 지수 모두 90% 이상</td>
+          <td class="good">✅ 1,000만원 + 25.5만원 = <strong>1,025.5만원</strong></td>
+        </tr>
+        <tr>
+          <td>6차(3년 만기)까지 오고 1개의 지수가 상환조건 이하일때 - 수정</td>
+          <td class="good">✅ 1,000만원 + 153만원 = <strong>1,153만원</strong></td>
+        </tr>
+        <tr>
+          <td>낙인 발동 후 만기에 주가 60% 수준</td>
+          <td class="bad">❌ 1,000만원 × 60% = <strong>600만원</strong> (400만원 손실)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+<footer>
+  <p>© 2025 ELS 교육 자료 · 교육 목적으로 제작된 비영리 페이지</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

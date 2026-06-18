@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OX 퀴즈 — ELS 완전 정복</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/Quiz.css" />
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">🏠 홈</a></li>
+    <li><a href="WhatIsEls.html">ELS란?</a></li>
+    <li><a href="Compare.html">예적금과 ETF 비교</a></li>
+    <li><a href="Risks.html">위험성</a></li>
+    <li><a href="Quiz.html">OX 퀴즈</a></li>
+    <li><a href="References.html">출처</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <div class="tag">실력 확인</div>
+  <h1>OX 퀴즈</h1>
+  <p style="margin-top:16px;color:var(--text-muted)">
+    문제를 클릭해 펼친 뒤 O 또는 X를 선택하면 정답과 해설을 확인할 수 있어요.
+  </p>
+
+  <!--
+    ========================================================
+    퀴즈 작성 가이드
+    ─────────────────────────────────────────────────────────
+    각 .quiz-item 의 data-answer 에 정답을 "O" 또는 "X" 로 입력.
+
+    .quiz-text        → 문제 텍스트
+    .answer-label     → 정답 표기 ("O 정답" / "X 정답"), class도 O 또는 X 로 변경
+    .quiz-answer 의 <p> → 해설 텍스트
+    ========================================================
+  -->
+
+  <div class="quiz-list" id="quiz-list">
+
+    <!-- Q1 -->
+    <div class="quiz-item" data-answer="X">
+      <div class="quiz-question">
+        <span class="quiz-num">1</span>
+        <span class="quiz-text">ELS는 은행이 발행하는 상품이므로 예금자 보호법의 적용을 받는다.</span>
+        <span class="quiz-toggle">▼</span>
+      </div>
+      <div class="quiz-buttons">
+        <button class="btn-ox O">⭕ O</button>
+        <button class="btn-ox X">❌ X</button>
+      </div>
+      <div class="quiz-answer">
+        <div class="answer-label X">X 정답</div>
+        <p>ELS는 은행이 아닌 <strong>증권사</strong>가 발행하는 상품입니다. 예금자 보호법은 은행·저축은행 등의 예금에만 적용되며, ELS는 보호 대상이 아닙니다. 증권사가 파산하면 원금을 돌려받지 못할 수 있습니다.</p>
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="quiz-item" data-answer="X">
+      <div class="quiz-question">
+        <span class="quiz-num">2</span>
+        <span class="quiz-text">낙인(Knock-In)이 발동되면 즉시 원금 손실이 확정된다.</span>
+        <span class="quiz-toggle">▼</span>
+      </div>
+      <div class="quiz-buttons">
+        <button class="btn-ox O">⭕ O</button>
+        <button class="btn-ox X">❌ X</button>
+      </div>
+      <div class="quiz-answer">
+        <div class="answer-label X">X 정답</div>
+        <p>낙인이 발동되어도 이후 평가일에 <strong>상환조건을 충족하면 원금과 이자를 정상 수령</strong>할 수 있습니다. 손실이 확정되는 건 "낙인 발동 + 만기까지 상환조건을 단 한 번도 못 넘긴" 경우에만 해당합니다.</p>
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="quiz-item" data-answer="O">
+      <div class="quiz-question">
+        <span class="quiz-num">3</span>
+        <span class="quiz-text">스텝다운형 ELS는 시간이 지날수록 조기상환 기준이 낮아진다.</span>
+        <span class="quiz-toggle">▼</span>
+      </div>
+      <div class="quiz-buttons">
+        <button class="btn-ox O">⭕ O</button>
+        <button class="btn-ox X">❌ X</button>
+      </div>
+      <div class="quiz-answer">
+        <div class="answer-label O">O 정답</div>
+        <p>스텝다운(Step-Down)형은 6개월마다 상환조건이 점점 낮아지는 구조입니다. 예를 들어 95→90→85→85→80→75처럼 기준이 내려가기 때문에 후반으로 갈수록 조기상환이 쉬워집니다.</p>
+      </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="quiz-item" data-answer="X">
+      <div class="quiz-question">
+        <span class="quiz-num">4</span>
+        <span class="quiz-text">ELS의 기초자산이 3개일 때, 2개만 상환조건을 넘으면 조기상환이 된다.</span>
+        <span class="quiz-toggle">▼</span>
+      </div>
+      <div class="quiz-buttons">
+        <button class="btn-ox O">⭕ O</button>
+        <button class="btn-ox X">❌ X</button>
+      </div>
+      <div class="quiz-answer">
+        <div class="answer-label X">X 정답</div>
+        <p>기초자산이 3개인 ELS는 <strong>3개 모두</strong> 상환조건을 충족해야 조기상환됩니다. 하나라도 기준 미달이면 조기상환이 이루어지지 않고 다음 평가일로 넘어갑니다.</p>
+      </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="quiz-item" data-answer="O">
+      <div class="quiz-question">
+        <span class="quiz-num">5</span>
+        <span class="quiz-text">ELS는 조기상환 조건을 한 번도 못 충족해도, 낙인이 발동되지 않으면 만기에 원금과 이자를 받을 수 있다.</span>
+        <span class="quiz-toggle">▼</span>
+      </div>
+      <div class="quiz-buttons">
+        <button class="btn-ox O">⭕ O</button>
+        <button class="btn-ox X">❌ X</button>
+      </div>
+      <div class="quiz-answer">
+        <div class="answer-label O">O 정답</div>
+        <p>낙인이 한 번도 발동되지 않았다면, 만기 상환조건을 넘지 못해도 <strong>원금과 이자를 전액 수령</strong>합니다. 조기상환 실패 ≠ 손실입니다. 손실이 나는 건 오직 "낙인 발동 + 만기까지 상환조건 미달" 조합일 때입니다.</p>
+      </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="quiz-item" data-answer="X">
+      <div class="quiz-question">
+        <span class="quiz-num">6</span>
+        <span class="quiz-text">ELS는 언제든지 해지해도 원금을 그대로 돌려받을 수 있다.</span>
+        <span class="quiz-toggle">▼</span>
+      </div>
+      <div class="quiz-buttons">
+        <button class="btn-ox O">⭕ O</button>
+        <button class="btn-ox X">❌ X</button>
+      </div>
+      <div class="quiz-answer">
+        <div class="answer-label X">X 정답</div>
+        <p>ELS를 만기 전에 중도 해지하면 그 시점의 <strong>시장 가격 기준으로 정산</strong>됩니다. 시장 상황에 따라 원금보다 적게 받을 수 있어요. 예금처럼 이자만 손해보는 게 아니라 <strong>원금 손실이 발생</strong>할 수 있습니다.</p>
+      </div>
+    </div>
+
+  </div><!-- /quiz-list -->
+
+  <!-- 점수판 (전체 답변 후 노출) -->
+  <div class="score-board" id="score-board">
+    <div style="font-size:1rem;opacity:0.85">최종 점수</div>
+    <div class="score-num" id="score-text">0 / 6</div>
+    <div class="score-msg" id="score-msg"></div>
+    <button class="btn-retry" id="btn-retry">다시 풀기</button>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 ELS 교육 자료 · 교육 목적으로 제작된 비영리 페이지</p>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/Quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>예적금·ETF 비교 — ELS 완전 정복</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .compare-table th.highlight {
+      background: var(--primary);
+      color: #fff;
+    }
+    .compare-table td.highlight {
+      background: #eef6ff;
+      font-weight: 600;
+    }
+    .risk-high  { color: var(--danger); font-weight: 700; }
+    .risk-mid   { color: var(--accent); font-weight: 700; }
+    .risk-low   { color: #27ae60;       font-weight: 700; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">🏠 홈</a></li>
+    <li><a href="WhatIsEls.html">ELS란?</a></li>
+    <li><a href="Compare.html" class="active">예적금과 ETF 비교</a></li>
+    <li><a href="Risks.html">위험성</a></li>
+    <li><a href="Quiz.html">OX 퀴즈</a></li>
+    <li><a href="References.html">출처</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+  <div class="tag">상품 비교</div>
+  <h1>ELS vs 예금 vs 적금 vs ETF</h1>
+  <p style="margin-top:16px;color:var(--text-muted);">
+    4가지 금융상품의 핵심 항목을 한눈에 비교합니다. <strong>ELS 열</strong>은 파란색으로 강조됩니다.
+  </p>
+
+
+  <!-- 예금이란? -->
+  <h2 style="margin-top:56px;">예금이란?</h2>
+  <p style="margin-bottom:20px;">은행에 돈을 맡기면 약속된 이자를 받는 금융상품이에요.</p>
+
+  <div class="card-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-bottom:28px;">
+    <div class="card">
+      <div class="card-icon">🔒</div>
+      <h3>원금 보장</h3>
+      <p>맡긴 돈은 무조건 돌려받습니다. 은행이 어떤 상황이어도 원금은 사라지지 않아요.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📋</div>
+      <h3>확정 이자</h3>
+      <p>가입 시점에 이자율이 정해져 있어요. 연 3~4% 수준으로, 결과가 처음부터 확정됩니다.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🛡️</div>
+      <h3>예금자 보호</h3>
+      <p>은행이 망해도 1인당 1억 원까지 국가(예금보험공사)가 보장해 줍니다.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📅</div>
+      <h3>만기 자유</h3>
+      <p>보통 1개월~3년 중 선택 가능합니다. 만기가 짧아 자금 계획 세우기 쉬워요.</p>
+    </div>
+  </div>
+
+  <h3 style="margin-bottom:12px;">예금 vs 적금 차이</h3>
+  <div class="compare-wrap">
+    <table>
+      <thead>
+        <tr><th>항목</th><th>🏦 예금</th><th>💰 적금</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>납입 방식</td><td>한 번에 목돈 납입</td><td>매월 일정액 납입</td></tr>
+        <tr><td>이자 계산</td><td>전액에 이자 적용</td><td>납입할수록 이자 쌓임</td></tr>
+        <tr><td>적합한 경우</td><td class="good">목돈이 있을 때</td><td class="good">매월 저축할 때</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="margin-top:36px;margin-bottom:12px;">ELS와 예금의 가장 큰 차이</h3>
+  <div class="compare-wrap">
+    <table>
+      <thead>
+        <tr><th>구분</th><th>🏦 예금</th><th class="highlight">📈 ELS</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>돈의 성격</td>
+          <td class="good">맡기면 <strong>무조건</strong> 원금 + 이자 돌려받음</td>
+          <td class="highlight mid">조건을 만족해야 수익, 못 만족하면 원금도 잃을 수 있음</td>
+        </tr>
+        <tr>
+          <td>결과 확정 시점</td>
+          <td class="good">가입 즉시 확정</td>
+          <td class="highlight bad">만기/조기상환 시점에 결정</td>
+        </tr>
+        <tr>
+          <td>수익률</td>
+          <td class="mid">연 3~4% (낮지만 확실)</td>
+          <td class="highlight good">연 5~10% (높지만 조건부)</td>
+        </tr>
+        <tr>
+          <td>원금 손실 가능성</td>
+          <td class="good">없음</td>
+          <td class="highlight bad">낙인 발동 후 상환조건 미달 시 손실</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="analogy-box blue" style="margin-top:20px;">
+    <div class="label">핵심 비유</div>
+    <p>
+      예금은 <strong>"맡기면 무조건 돌아오는 돈"</strong>이고,<br>
+      ELS는 <strong>"조건에 따라 달라지는 돈"</strong>이에요.<br>
+      <span style="font-size:0.9rem;color:var(--text-muted);">예금은 결과가 처음부터 정해져 있지만, ELS는 기초자산의 움직임에 따라 수익도 손실도 날 수 있습니다.</span>
+    </p>
+  </div>
+
+  <!-- ETF란? -->
+  <h2 style="margin-top:56px;">ETF란?</h2>
+  <p style="margin-bottom:20px;">주식처럼 거래소에서 사고팔 수 있는 펀드예요. 특정 지수(주가 묶음)를 그대로 따라가도록 만들어진 상품입니다.</p>
+
+  <div class="compare-wrap" style="margin-bottom:28px;">
+    <table>
+      <thead>
+        <tr><th>특징</th><th>내용</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>📊 지수 추종</td>
+          <td>KOSPI200, S&amp;P500 같은 주가지수를 그대로 따라가요. 시장이 오르면 수익, 내리면 손실입니다.</td>
+        </tr>
+        <tr>
+          <td>🔄 자유로운 거래</td>
+          <td>주식처럼 증권사 앱에서 실시간으로 사고팔 수 있어요. ELS처럼 3년 묶이지 않습니다.</td>
+        </tr>
+        <tr>
+          <td>⚠️ 원금 비보장</td>
+          <td>시장이 하락하면 투자금이 줄어들어요. 예금자 보호도 없고, 손실에 상한선도 없습니다.</td>
+        </tr>
+        <tr>
+          <td>💡 분산 투자 효과</td>
+          <td>한 종목이 아닌 수십~수백 종목을 한 번에 사는 것과 같아요. 개별 주식보다 변동성이 낮습니다.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 style="margin-bottom:12px;">ETF vs ELS 차이</h3>
+  <div class="compare-wrap">
+    <table>
+      <thead>
+        <tr><th>구분</th><th>📊 ETF</th><th class="highlight">📈 ELS</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>수익 방식</td>
+          <td>시장 지수를 그대로 반영 (오르면 수익, 내리면 손실)</td>
+          <td class="highlight mid">조건(상환조건·낙인) 충족 여부에 따라 결정</td>
+        </tr>
+        <tr>
+          <td>유동성</td>
+          <td class="good">언제든 매도 가능</td>
+          <td class="highlight bad">중도 해지 시 손실 가능, 3년 묶임</td>
+        </tr>
+        <tr>
+          <td>손실 범위</td>
+          <td class="bad">시장 하락만큼 무제한 손실 가능</td>
+          <td class="highlight mid">낙인 발동 + 상환조건 미달 시에만 손실</td>
+        </tr>
+        <tr>
+          <td>예금자 보호</td>
+          <td class="bad">없음</td>
+          <td class="highlight bad">없음</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="analogy-box green" style="margin-top:20px;">
+    <div class="label">핵심 차이</div>
+    <p>
+      ETF는 <strong>"시장이 오르면 나도 오르고, 내리면 나도 내리는"</strong> 상품이고,<br>
+      ELS는 <strong>"조건만 지키면 정해진 수익, 조건을 못 지키면 원금 손실"</strong> 상품이에요.<br>
+      <span style="font-size:0.9rem;color:var(--text-muted);">ETF는 시장을 그대로 따라가지만, ELS는 조건부로 움직입니다.</span>
+    </p>
+  </div>
+
+  <div class="compare-wrap" style="margin-top:28px;">
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>항목</th>
+          <th class="highlight">📈 ELS</th>
+          <th>🏦 예금</th>
+          <th>💰 적금</th>
+          <th>📊 ETF</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>원금 보장</td>
+          <td class="highlight bad">❌ 비보장</td>
+          <td class="good">✅ 보장</td>
+          <td class="good">✅ 보장</td>
+          <td class="bad">❌ 비보장</td>
+        </tr>
+        <tr>
+          <td>예금자 보호</td>
+          <td class="highlight bad">❌ 없음</td>
+          <td class="good">✅ 1억원까지</td>
+          <td class="good">✅ 1억원까지</td>
+          <td class="bad">❌ 없음</td>
+        </tr>
+        <tr>
+          <td>수익 방식</td>
+          <td class="highlight">조건 충족 시 연 5~10% 확정 수익</td>
+          <td>확정 이자 연 3~4%</td>
+          <td>매월 납입 + 확정 이자 연 3~5%</td>
+          <td>주가 따라 수익/손실 (무제한)</td>
+        </tr>
+        <tr>
+          <td>위험도</td>
+          <td class="highlight risk-high">🔴 높음</td>
+          <td class="risk-low">🟢 낮음</td>
+          <td class="risk-low">🟢 낮음</td>
+          <td class="risk-mid">🟡 중간~높음</td>
+        </tr>
+        <tr>
+          <td>중도 해지</td>
+          <td class="highlight bad">손실 발생 가능</td>
+          <td class="mid">이자만 손실</td>
+          <td class="mid">이자만 손실</td>
+          <td class="good">언제든 매도 가능</td>
+        </tr>
+        <tr>
+          <td>적합한 투자자</td>
+          <td class="highlight">어느 정도 위험 감수 가능하고 조건부 고수익을 원하는 투자자</td>
+          <td>안전을 최우선으로 원하는 투자자</td>
+          <td>매월 저축 습관을 만들고 싶은 투자자</td>
+          <td>직접 투자하며 시장 수익을 추구하는 투자자</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="analogy-box" style="margin-top:28px;">
+    <div class="label">한 줄 요약</div>
+    <p>
+      <strong>안전이 최우선</strong>이라면 → 예금·적금<br>
+      <strong>조건부 고수익</strong>을 원한다면 → ELS<br>
+      <strong>직접 투자·유동성</strong>이 중요하다면 → ETF
+    </p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 ELS 교육 자료 · 교육 목적으로 제작된 비영리 페이지</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
