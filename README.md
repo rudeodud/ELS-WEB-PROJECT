@@ -4,16 +4,7 @@
 
 ## 서버 실행 방법
 
-### 방법 1 — Python (추천)
-
-```bash
-cd frontend
-python3 -m http.server 8080
-```
-
-브라우저에서 http://localhost:8080 접속
-
-### 방법 2 — Node.js (npx)
+### 방법  — Node.js (npx)
 
 ```bash
 cd frontend
