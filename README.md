@@ -4,7 +4,7 @@
 
 ## 서버 실행 방법
 
-### 방법  — Node.js (npx)
+### 방법  — Node.js (npx) - MacOS 기준
 
 ```bash
 cd frontend
