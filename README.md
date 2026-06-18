@@ -20,6 +20,3 @@ cd frontend
 npx serve .
 ```
 
-### 방법 3 — VS Code Live Server
-
-VS Code에서 `index.html` 파일을 열고 우측 하단 **Go Live** 버튼 클릭
