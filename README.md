@@ -12,4 +12,4 @@ npx serve .
 ```
 
 ### 방법 2 - 링크
-https://rudeodud.github.io/ELS-WEB-PROJECT/frontend/index.html
+https://rudeodud.github.io/ELS-WEB-PROJECT
