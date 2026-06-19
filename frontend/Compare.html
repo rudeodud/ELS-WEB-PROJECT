@@ -17,6 +17,16 @@
     .risk-high  { color: var(--danger); font-weight: 700; }
     .risk-mid   { color: var(--accent); font-weight: 700; }
     .risk-low   { color: #27ae60;       font-weight: 700; }
+    .section-block {
+      border-top: 2px solid var(--border);
+      margin-top: 56px;
+      padding-top: 48px;
+    }
+    .section-block:first-of-type {
+      border-top: none;
+      margin-top: 0;
+      padding-top: 0;
+    }
   </style>
 </head>
 <body>
@@ -33,15 +43,18 @@
 </nav>
 
 <div class="page">
+
+  <div class="section-block">
   <div class="tag">상품 비교</div>
   <h1>ELS vs 예금 vs 적금 vs ETF</h1>
   <p style="margin-top:16px;color:var(--text-muted);">
     4가지 금융상품의 핵심 항목을 한눈에 비교합니다. <strong>ELS 열</strong>은 파란색으로 강조됩니다.
   </p>
+  </div><!-- /section: 소개 -->
 
-
+  <div class="section-block">
   <!-- 예금이란? -->
-  <h2 style="margin-top:56px;">예금이란?</h2>
+  <h2>예금이란?</h2>
   <p style="margin-bottom:20px;">은행에 돈을 맡기면 약속된 이자를 받는 금융상품이에요.</p>
 
   <div class="card-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-bottom:28px;">
@@ -121,8 +134,11 @@
     </p>
   </div>
 
+  </div><!-- /section: 예금이란? -->
+
+  <div class="section-block">
   <!-- ETF란? -->
-  <h2 style="margin-top:56px;">ETF란?</h2>
+  <h2>ETF란?</h2>
   <p style="margin-bottom:20px;">주식처럼 거래소에서 사고팔 수 있는 펀드예요. 특정 지수(주가 묶음)를 그대로 따라가도록 만들어진 상품입니다.</p>
 
   <div class="compare-wrap" style="margin-bottom:28px;">
@@ -191,7 +207,11 @@
     </p>
   </div>
 
-  <div class="compare-wrap" style="margin-top:28px;">
+  </div><!-- /section: ETF란? -->
+
+  <div class="section-block">
+  <h2>4가지 상품 한눈에 비교</h2>
+  <div class="compare-wrap" style="margin-top:16px;">
     <table class="compare-table">
       <thead>
         <tr>
@@ -257,6 +277,8 @@
       <strong>직접 투자·유동성</strong>이 중요하다면 → ETF
     </p>
   </div>
+  </div><!-- /section: 4상품비교 -->
+
 </div>
 
 <footer>

@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>위험성 — ELS 완전 정복</title>
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .section-block {
+      border-top: 2px solid var(--border);
+      margin-top: 56px;
+      padding-top: 48px;
+    }
+    .section-block:first-of-type {
+      border-top: none;
+      margin-top: 0;
+      padding-top: 0;
+    }
+  </style>
 </head>
 <body>
 
@@ -20,12 +32,16 @@
 </nav>
 
 <div class="page">
+
+  <div class="section-block">
   <div class="tag">꼭 알아야 할 위험</div>
   <h1>ELS의 위험성</h1>
   <p style="margin-top:16px;color:var(--text-muted);">
     ELS는 조건만 맞으면 예금보다 높은 수익을 주지만, 조건을 못 맞추면 원금을 잃을 수 있어요. 어떤 위험이 있는지 하나씩 살펴봅니다.
   </p>
+  </div><!-- /section: 소개 -->
 
+  <div class="section-block">
   <!-- 위험 1: 원금 손실 -->
   <h2>위험 1 — 원금 손실 가능성</h2>
   <p>ELS는 <strong>원금 비보장 상품</strong>입니다. 낙인이 발동된 후 만기까지 상환조건을 충족하지 못하면 원금의 일부 또는 전부를 잃을 수 있어요.</p>
@@ -61,6 +77,9 @@
     <p>기초자산이 만기에 0에 가깝게 폭락하면 투자금 전액을 잃을 수 있습니다. 이론상 손실률은 <strong>최대 -100%</strong>까지 가능해요.</p>
   </div>
 
+  </div><!-- /section: 위험1 -->
+
+  <div class="section-block">
   <!-- 위험 2: 낙인 구조 -->
   <h2>위험 2 — 낙인(Knock-In) 구조</h2>
   <p>낙인은 ELS에서 가장 핵심적인 위험 장치입니다. 기초자산이 계약 기간 중 단 한 번이라도 낙인선 아래로 떨어지면 발동됩니다.</p>
@@ -91,6 +110,9 @@
     </p>
   </div>
 
+  </div><!-- /section: 위험2 -->
+
+  <div class="section-block">
   <!-- 위험 3: 3개 지수 모두 조건 충족 -->
   <h2>위험 3 — 기초자산 3개 모두 충족해야 상환</h2>
   <p>ELS는 보통 3개의 기초자산(예: KOSPI200, S&P500, EuroStoxx50)을 동시에 추적합니다. 조기상환이 되려면 <strong>3개 모두</strong> 상환조건을 넘어야 해요.</p>
@@ -114,6 +136,9 @@
     <p>한국, 미국, 유럽 시장이 <strong>동시에</strong> 좋아야 수익을 받을 수 있어요. 하나라도 기준에 못 미치면 조기상환이 되지 않습니다.</p>
   </div>
 
+  </div><!-- /section: 위험3 -->
+
+  <div class="section-block">
   <!-- 위험 4: 유동성 위험 -->
   <h2>위험 4 — 유동성 위험 (돈이 묶임)</h2>
   <p>ELS는 만기가 보통 <strong>3년</strong>입니다. 중간에 급하게 돈이 필요해도 쉽게 꺼낼 수 없어요.</p>
@@ -136,6 +161,9 @@
     </div>
   </div>
 
+  </div><!-- /section: 위험4 -->
+
+  <div class="section-block">
   <!-- 위험 5: 발행사 위험 -->
   <h2>위험 5 — 발행사(증권사) 부도 위험</h2>
   <p>ELS는 증권사가 발행합니다. 만약 해당 증권사가 <strong>파산</strong>하면 원금을 돌려받지 못할 수 있어요.</p>
@@ -165,6 +193,9 @@
     </table>
   </div>
 
+  </div><!-- /section: 위험5 -->
+
+  <div class="section-block">
   <!-- 높은 수익률만 보면 왜 위험한가 -->
   <h2>높은 수익률만 보고 투자하면 왜 위험한가?</h2>
   <p>ELS는 "연 8~10% 수익"이라는 숫자가 눈에 띄지만, 그 숫자 뒤에 숨어있는 조건들을 모르면 큰 손실을 볼 수 있어요.</p>
@@ -204,6 +235,9 @@
     </p>
   </div>
 
+  </div><!-- /section: 수익률위험 -->
+
+  <div class="section-block">
   <!-- 투자 전 체크리스트 -->
   <h2>투자 전 체크리스트</h2>
   <p style="margin-bottom:16px;">ELS에 투자하기 전 아래 항목을 꼭 확인하세요.</p>
@@ -225,6 +259,8 @@
       <span style="color:var(--danger);font-weight:600;">투자 전 반드시 구조와 위험을 충분히 이해한 뒤 결정해야합니다.</span>
     </p>
   </div>
+  </div><!-- /section: 체크리스트 -->
+
 </div>
 
 <footer>

@@ -67,12 +67,12 @@
 
 /* 버튼 영역 */
 .quiz-buttons {
-  display: none;
+  display: none !important;
   gap: 12px;
   padding: 0 24px 20px 72px;
 }
 
-.quiz-item.open .quiz-buttons { display: flex; }
+.quiz-item.open .quiz-buttons { display: flex !important; }
 
 .btn-ox {
   flex: 1;
@@ -92,13 +92,14 @@
 .btn-ox.X { color: var(--danger); }
 
 .btn-ox.selected-correct {
-  background: #eafaf2;
   border-color: #27ae60;
+  outline: 3px solid #27ae60;
 }
 
 .btn-ox.selected-wrong {
-  background: var(--danger-light);
   border-color: var(--danger);
+  outline: 3px solid var(--danger);
+  opacity: 0.5;
 }
 
 /* 해설 영역 */
